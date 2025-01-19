@@ -1,0 +1,2 @@
+# Concurrent Modification in Kotlin Map
+This example highlights a potential issue in Kotlin when using `removeIf` on the values of a mutable map.  The `removeIf` function iterates and modifies the map concurrently, leading to unexpected behavior instead of throwing a `ConcurrentModificationException` as one might expect.  The solution demonstrates a safer approach.
